@@ -162,6 +162,7 @@ body {
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 /* Accent bar */
@@ -185,6 +186,11 @@ body {
   box-shadow:
     0 20px 45px rgba(0, 0, 0, 0.12),
     0 0 0 1px rgba(242, 111, 79, 0.12);
+}
+
+/* Color-on-hover glow */
+.card:hover::before {
+  opacity: 0.85;
 }
 
 /* Headings inside cards */
