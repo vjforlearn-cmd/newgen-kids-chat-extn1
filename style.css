@@ -361,6 +361,34 @@ body {
   left: -1.5rem;
 }
 
+/* Video Tour Styling */
+.video-tour {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.video-tour h2 {
+  margin-bottom: 20px;
+}
+
+.facility-video {
+  width: 100%;             /* Fills the container width */
+  max-width: 800px;        /* Limits size on large screens */
+  height: auto;            /* Maintains aspect ratio */
+  border-radius: 12px;     /* Rounds corners to match modern design */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto;          /* Centers the video */
+}
+
+/* Optional: Adjust grid spacing if needed */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
 /* Contact */
 .contact-layout {
   display: grid;
