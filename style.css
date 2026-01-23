@@ -361,32 +361,64 @@ body {
   left: -1.5rem;
 }
 
-/* Video Tour Styling */
+/* General Layout Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Video Styling for all devices */
 .video-tour {
-  margin-bottom: 40px;
+  /* Added margin-top to separate it from the images above */
+  margin: 40px 0 40px; 
   text-align: center;
 }
 
-.video-tour h2 {
-  margin-bottom: 20px;
-}
-
 .facility-video {
-  width: 100%;             /* Fills the container width */
-  max-width: 800px;        /* Limits size on large screens */
-  height: auto;            /* Maintains aspect ratio */
-  border-radius: 12px;     /* Rounds corners to match modern design */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;             
+  max-width: 800px;        
+  height: auto;            
+  border-radius: 12px;     
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   display: block;
-  margin: 0 auto;          /* Centers the video */
+  margin: 0 auto;          
 }
 
-/* Optional: Adjust grid spacing if needed */
+/* Responsive Gallery Grid */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  margin-top: 30px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 250px;           
+  object-fit: cover;       
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for desktop users */
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Mobile Adjustments (Screen width below 600px) */
+@media (max-width: 600px) {
+  .site-header .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .gallery-grid {
+    gap: 15px;             
+  }
 }
 
 /* Contact */
